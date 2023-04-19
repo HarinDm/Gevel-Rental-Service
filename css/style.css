@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* ul li {
+  list-style: none;
+} */
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #A32361;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+  
+  @font-face {
+    font-family: 'NunitoSans';
+    src: url('../fonts/NunitoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html:not([data-scroll='0']) header {
+    background: rgba(2, 2, 2, 0.4);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+
+a,
+button {
+  cursor: pointer;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a {
+    /* text-decoration: none; */
+    color: inherit;
+  }
+  
+/* ----------------------------------------------------- */
+
+body {
+    font-family: 'NunitoSans';
+    background-color: white;
+    font-size: 16px;
+    background-image: url(../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 58%;
+}
+
+.wrapper {
+  max-width: calc(100% - 160px);
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+p{
+  font-size: 16px;
+}
+
+.preheader{
+  display: flex;
+  width: 100%;
+  height: 62px;
+  justify-content: end;
+}
+
+.geo{
+  display: flex;
+  margin: 24px auto 14px 20px;
+  height: 24px;
+}
+
+.geo__icon{
+  width: 24px;
+  height: 24px;
+}
+
+.geo__city{
+  font-size: 16px;
+  margin-left: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.toggles{
+  display: flex;
+  height: 32px;
+  border-radius: 9px;
+  margin: 20px 0 10px;
+}
+
+.toggle-currency{
+  width: 68px;
+  background-color: #F6F7FB;
+}
+
+.currency__item{
+  width: 32px;
+  height: 32px;
+}
+
+.usd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6285FF;
+  background-color: white;
+  border: 1px solid  #6285FF;
+  border-radius: 9px;
+  margin-right: 4px;
+}
+
+.gel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #919EB6;
+}
+
+.toggle-language{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  color: #6285FF;
+  border: 1px solid  #6285FF;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header-block{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-radius: 45px;
+  box-shadow: 0px 0px 10px #2c2c2a14;
+  background-color: white;
+}
+
+.logo-icon{
+  width: 66px;
+  height: 42px;
+  margin: 14px 0 14px 16px;
+}
+
+.header-block__nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 42%;
+  margin: 0 auto;
+}
+
+.search-icon{
+  width: 44px;
+  height: 44px;
+  margin-right: 20px;
+}
+
+.icon__ad{
+  width: 21.5px;
+  height: 21.5px;
+  margin-right: 11px;
+}
+
+.add-ad{
+  width: 216px;
+  height: 50px;
+  border: 0px;
+  border-radius: 44px;
+  background-color: #6285FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.user-icon{
+  width: 44px;
+  height: 44px;
+  margin: 0 16px 0 20px;
+}
