@@ -3,5 +3,33 @@
   .wrapper
     .banner
       .banner-title
-        h1 Аренда и покупка<br>
+        h1.title Аренда и покупка<br>
           <span>Недвижимости</span> в Грузии
+      .banner-forms
+        .category
+          .realty.category-forms 
+            img(src='')
+            | Недвижимость
+          .auto.category-forms 
+            img(src='')  
+            | Авто
+        .category-items
+          .district.category-item
+            img(src='')
+            | Город, район, ст. метро
+          .realty-type.category-item
+            img(src='')
+            | Тип недвижимости
+          .rent.category-item
+            | Аренда
+          .bue.category-item
+            | Покупка
+          .price-from.category-item 
+            img(src='')
+            | Цена, от
+            input(type="text")
+          .price-to.category-item
+            | Цена, до 
+            input(type="text") 
+          .show.category-item
+            | Показать 123 предложения
