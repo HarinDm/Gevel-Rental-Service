@@ -7,25 +7,27 @@
           <span>Недвижимости</span> в Грузии
       .banner-forms
         .category
-          .realty.category-forms 
-            img.category-img(src='../assets/images/png/homeheart.png')
+          .category-forms.category-active
+            img.category-icon(src='../assets/images/png/homeheart.png')
             | Недвижимость
-          .auto.category-forms 
-            img.category-img(src='../assets/images/png/car.png')  
+          .category-forms.category-deactive
+            img.category-icon(src='../assets/images/png/car.png')  
             | Авто
+          .category-forms.category-active.category-realty
         .category-items
           .district.category-item
-            img(src='')
+            img.category-item__icon(src='../assets/images/png/point.png')
             | Город, район, ст. метро
           .realty-type.category-item
-            img(src='')
+            img.category-item__icon(src='../assets/images/png/home.png')
             | Тип недвижимости
+            img.category-item__icon(src='../assets/images/png/down-black.png')
           .rent.category-item
             | Аренда
           .bue.category-item
             | Покупка
           .price-from.category-item 
-            img(src='')
+            img.category-item__icon(src='../assets/images/png/price.png')
             | Цена, от
             input.price-input(type="text")
           .price-to.category-item
